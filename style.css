@@ -1,0 +1,326 @@
+body{
+  overflow-x: hidden;
+  margin:0;
+ 
+  font-family: Arial, sans-serif;
+  
+}
+
+.page1{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(103, 111, 109);
+}
+.earthvid{
+  width:100%;
+  height:100vh;
+
+}.page2{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(79, 122, 108);
+}
+.page3{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(56, 141, 113);
+}
+.page4{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(0, 153, 102);
+}
+.page5{
+  width:100vw;
+  height:100vh;
+  background-color: rgb(2, 63, 43);
+}
+
+
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  padding: 10px 25px;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+
+nav h4 {
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.3s;
+  position: relative;
+}
+
+
+nav h4:hover {
+  color:  rgb(0, 255, 204);
+}
+
+
+nav h4::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: rgb(0, 255, 204);
+  transition: 0.3s;
+}
+
+nav h4:hover::after {
+  width: 100%;
+}
+
+
+nav h4.active {
+  color: rgb(0, 255, 204);
+}.page2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.launch-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.launch-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.launch-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  font-size: 80px;
+  font-weight: bold;
+}
+.page3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.space-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.space-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.rocket {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-size: 40px;
+}
+.space-details {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card {
+  padding: 25px 30px;
+  border-radius: 15px;
+  color: white;
+  width: 250px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.page4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.mars-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.mars-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(150, 30, 0, 0.4);
+}
+
+.mars-content {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: white;
+  max-width: 500px;
+}
+
+.mars-content h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.mars-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.page5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.explore-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.explore-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(120, 40, 10, 0.4);
+}
+
+.explore-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.explore-content h1 {
+  font-size: 50px;
+}
+
+.explore-content p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  border: none;
+  background: rgb(0, 255, 204);
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rover {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  font-size: 40px;
+  transition: 0.5s;
+}
+ .earth-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.start-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+  background: rgb(0, 255, 204);
+  color: black;
+
+  transition: 0.3s;
+}
+
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(0, 255, 204);
+}

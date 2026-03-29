@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARS Mission</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<h4 data-target="earth">Earth</h4>
+ <h4 class="launch">Launch</h4>
+  <h4 class="space">Space</h4>
+ <h4 class="mars">Mars</h4>
+ <h4 class="explore">Explore</h4>
+</nav>
+  <div class="page1" id="earth">
+  <video class="earthvid" autoplay muted loop>
+    <source src="material/earth.mp4" type="video/mp4">
+  </video>
+
+  <div class="earth-content">
+    <h1>Journey to Mars</h1>
+    <button class="start-btn">Begin Journey</button>
+  </div>
+</div>
+  <div class="page2" id="launch">
+  <video class="launch-video" muted loop>
+    <source src="material/launch.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="launch-content">
+    <h1> Launch Sequence</h1>
+    <p class="countdown">3</p>
+  </div>
+</div>
+ <div class="page3" id="space">
+  <video class="space-video" muted loop>
+    <source src="material/space.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="space-content">
+    <h1 class="title">Journey Through Space</h1>
+    <p class="text">
+      Leaving Earth behind, the spacecraft enters the silent vacuum of space.  
+      Millions of kilometers ahead lies Mars — a new world waiting to be explored.  
+    </p>
+  </div>
+  <div class="space-details">
+  <div class="card">
+    <h2>Mission Status</h2>
+    <p> Speed: <span id="speed">0</span> km/s</p>
+    <p> Distance from Earth: <span id="distance">0</span> km</p>
+    <p>Time to Mars: <span id="time">0</span> days</p>
+  </div>
+</div>
+</div>
+<div class="page4" id="mars">
+  <video class="mars-video" muted loop>
+    <source src="material/landing.mp4"type="video/mp4">
+  </video>
+
+  <div class="mars-overlay"></div>
+
+  <div class="mars-content">
+    <h1> Mars Landing</h1>
+    <p>The spacecraft enters the Martian atmosphere.  
+       Heat shields deployed. Landing sequence initiated.</p>
+  </div>
+</div>
+ <div class="page5" id="explore">
+  <!-- Background -->
+  <video class="explore-video" muted loop>
+    <source src="material/explore.mp4" type="video/mp4">
+  </video>
+
+  <div class="explore-overlay"></div>
+
+  <!-- Content -->
+  <div class="explore-content">
+    <h1>🤖 Exploring Mars</h1>
+    <p>
+      The rover begins its mission on the Martian surface,
+      searching for signs of life and collecting valuable data.
+    </p>
+
+    <button class="explore-btn">Deploy Rover</button>
+  </div>
+
+  <!-- Rover -->
+  <div class="rover">🤖</div>
+</div><script src="https://unpkg.com/@studio-freight/lenis"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
